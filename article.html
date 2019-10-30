@@ -73,10 +73,6 @@
 
   <!-- Main Container -->
   <main class="ui container">
-    <div class="row">
-      <img class="ui fluid image sixteen columns" src="https://placehold.it/750x175&amp;text=Responsive Img" alt="">
-    </div>
-    <div class="ui divider"></div>
     <!-- Divider -->
     <div class="ui two grid">
       <!-- Main Content -->
@@ -86,101 +82,125 @@
           <div class="ui breadcrumb">
             <a class="section">Home</a>
             <div class="divider"> / </div>
-            <div class="section active">All Posts</div>
+            <a class="section">Article</a>
+            <div class="divider"> / </div>
+            <div class="section active">Lorem Ipsum Dolor</div>
           </div>
         </nav>
         <!-- End Breadcrumb -->
         
-        <div class="ui equal width grid">
-          <!-- List Articles -->
-          <div class="column centered row">
-            <div class="sixteen wide mobile seven wide tablet five wide computer column">
-              <article class="ui card" style="width:100%">
-                <div class="image">
-                  <img src="https://placehold.it/600x450&text=Image" alt>
-                </div>
-                <div class="content">
-                  <a class="header">Lorem Ipsum</a>
-                  <div class="description">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-                </div>
-                <div class="extra content">
-                  <small>23 Agustus 2019</small>
-                </div>
-              </article>
+        <!-- List Articles -->
+        <div class="ui segment">
+          <article>
+            <h1>Lorem Ipsum dolor (Heading 1)</h1>
+            <small>Published a month ago</small>
+            <hr/>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Lorem Ipsum dolor (Heading 2)</h2>
+            <p><strong>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <ul>
+              <li>Lorem Ipsum dolor sit amet</li>
+              <li>consectetur adipiscing elit</li>
+              <li>Lorem Ipsum dolor sit amet</li>
+              <li>consectetur adipiscing elit</li>
+            </ul>
+
+            <h3>Lorem Ipsum dolor (Heading 3)</h3>
+            <ol>
+              <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+              <li>Ut enim ad minim veniam</li>
+              <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+              <li>Ut enim ad minim veniam</li>
+            </ol>
+            <h4>Lorem Ipsum dolor (Heading 4)</h4>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <h3>Table</h3>
+            <table class="ui selectable celled table">
+              <thead>
+                <tr><th>Name</th><th>Status</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Lorem</td><td>No Action</td><td>None</td></tr>
+                <tr><td>Ipsum</td><td>Approved</td><td>Requires call</td></tr>
+                <tr><td>Dolor</td><td>Denied</td><td>None</td></tr>
+                <tr><td>Sit</td><td>No Action</td><td>None</td></tr>
+                <tr><td>Amet</td><td>Approved</td><td>Requires call</td></tr>
+              </tbody>
+            </table>
+
+            <h3>Tab</h3>
+            <div class="ui top attached tabular menu">
+              <a class="item active" data-tab="first">First</a>
+              <a class="item" data-tab="second">Second</a>
+              <a class="item" data-tab="third">Third</a>
             </div>
-            <div class="sixteen wide mobile seven wide tablet five wide computer column">
-              <article class="ui card" style="width:100%">
-                <div class="image">
-                  <img src="https://placehold.it/600x450&text=Image" alt>
-                </div>
-                <div class="content">
-                  <a class="header">Lorem Ipsum</a>
-                  <div class="description">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-                </div>
-                <div class="extra content">
-                  <small>23 Agustus 2019</small>
-                </div>
-              </article>
+            <div class="ui bottom attached tab segment active" data-tab="first">First. <br>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="ui bottom attached tab segment" data-tab="second">Second. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="ui bottom attached tab segment" data-tab="third">Third. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+            <h3>Pop up (Tool Tip)</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas placeat velit accusamus officiis nisi quam sequi? Quod repudiandae voluptatum reprehenderit aspernatur, dolores numquam veritatis exercitationem deleniti? Rerum fugit aut fugiat.</p>
+            <div class="ui button" data-tooltip="Top left" data-position="top left">
+              Top Left
             </div>
-            <div class="sixteen wide mobile seven wide tablet five wide computer column">
-              <article class="ui card" style="width:100%">
-                <div class="image">
-                  <img src="https://placehold.it/600x450&text=Image" alt>
-                </div>
-                <div class="content">
-                  <a class="header">Lorem Ipsum</a>
-                  <div class="description">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-                </div>
-                <div class="extra content">
-                  <small>23 Agustus 2019</small>
-                </div>
-              </article>
+            <div class="ui button" data-tooltip="Top center" data-position="top center">
+              Top Center
             </div>
-            <div class="sixteen wide mobile seven wide tablet five wide computer column">
-              <article class="ui card" style="width:100%">
-                <div class="image">
-                  <img src="https://placehold.it/600x450&text=Image" alt>
-                </div>
-                <div class="content">
-                  <a class="header">Lorem Ipsum</a>
-                  <div class="description">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-                </div>
-                <div class="extra content">
-                  <small>23 Agustus 2019</small>
-                </div>
-              </article>
+            <div class="ui button" data-tooltip="Top right" data-position="top right">
+              Top Right
             </div>
-            <div class="sixteen wide mobile seven wide tablet five wide computer column">
-              <article class="ui card" style="width:100%">
+          </article>
+        </div>
+        <!-- End List Articles -->
+        <div class="ui divider"></div>
+        <!-- Related Posts -->
+        <h5 class="ui segment">Related Posts</h5>
+        <div id="related" class="ui equal width grid">
+          <div class="column row">
+            <div class="sixteen wide mobile seven wide tablet four wide computer column">
+              <div class="ui card">
                 <div class="image">
-                  <img src="https://placehold.it/600x450&text=Image" alt>
+                  <img src="https://placehold.it/300x250&text=Image" alt>
                 </div>
                 <div class="content">
                   <a class="header">Lorem Ipsum</a>
-                  <div class="description">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
                 </div>
-                <div class="extra content">
-                  <small>23 Agustus 2019</small>
-                </div>
-              </article>
+              </div>
             </div>
-            <div class="sixteen wide mobile seven wide tablet five wide computer column">
-              <article class="ui card" style="width:100%">
+            <div class="sixteen wide mobile seven wide tablet four wide computer column">
+              <div class="ui card">
                 <div class="image">
-                  <img src="https://placehold.it/600x450&text=Image" alt>
+                  <img src="https://placehold.it/300x250&text=Image" alt>
                 </div>
                 <div class="content">
                   <a class="header">Lorem Ipsum</a>
-                  <div class="description">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
                 </div>
-                <div class="extra content">
-                  <small>23 Agustus 2019</small>
+              </div>
+            </div>
+            <div class="sixteen wide mobile seven wide tablet four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <img src="https://placehold.it/300x250&text=Image" alt>
                 </div>
-              </article>
+                <div class="content">
+                  <a class="header">Lorem Ipsum</a>
+                </div>
+              </div>
+            </div>
+            <div class="sixteen wide mobile seven wide tablet four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <img src="https://placehold.it/300x250&text=Image" alt>
+                </div>
+                <div class="content">
+                  <a class="header">Lorem Ipsum</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- End List Articles -->
+        <!-- End Related Posts -->
 
         <!-- Pagination -->
         <div class="ui centered grid">
@@ -196,11 +216,24 @@
         </div>
         <!-- End Pagination -->
 
+        <!-- Media Object -->
+        <!-- End Media Object -->
       </div>
       <!-- End Main Content -->
 
       <!-- Sidebar -->
       <aside class="sixteen wide tablet four wide computer column">
+        <!-- Author -->
+        <section id="author" class="ui center aligned segment">
+          <div class="profil-pic">
+          <img src="https://placehold.it/250x250&text=Profile" class="ui rounded centered image" style="max-width:100px;" alt="Profile">
+            <h3>Author</h3>
+            <a href=""><small>More by the Author</small></a>
+          </div>
+        </section>
+        <!-- End Author -->
+        <div class="ui divider"></div>
+        <!-- Popular -->
         <section id="popular">
           <h5 class="ui segment">Popular Posts</h5>
           <div class="ui vertical fluid menu">
@@ -231,7 +264,9 @@
             </div>
           </div>
         </section>
+        <!-- End Popular -->
         <div class="ui divider"></div>
+        <!-- Label -->
         <section id="label">
           <h5 class="ui segment">Label</h5>
           <div class="ui vertical fluid menu">
@@ -243,6 +278,7 @@
             <div class="item"><a href="">Aplication</a> <span class="ui label">25</span></div>
           </div>
         </section>
+        <!-- End Label -->
       </aside>
       <!-- End Sidebar -->
     </div>
@@ -287,6 +323,10 @@
   <!-- Script -->
   <script src="jquery-3.3.1.min.js"></script>
   <script src="semantic.min.js"></script>
+  <script>
+  $('.menu .item').tab();
+  $('.activating.element').popup();
+  </script>
   <!-- End Script -->
 </body>
 </html>
