@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tag -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="semantic.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Title -->
+  <title>Semantic</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- TopBar -->
+    <div class="ui two column stackable menu secondary grid" style="margin-bottom:0rem">
+      <!-- Navbar -->
+      <nav class="column menu three grid">
+
+        <!-- Menu -->
+        <a href="index.html" class="column item">Site Map</a>
+        <a href="index.html" class="column item">Archives</a>
+        <a href="index.html" class="column item">Pages</a>
+        <!-- End Menu -->
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Search -->
+      <div class="column menu right">
+        <div class="item right aligned">
+          <div class="ui action input">
+            <input type="text" placeholder="Search" aria-label="Search" aria-describedby="topBarSearch">
+            <button class="ui button primary">Search</button>
+          </div>
+        </div>
+      </div>
+      <!-- End Search -->
+      
+    </div>
+    <!-- End TopBar -->
+    
+    <!-- Logo + Responsive Img -->
+    <div class="ui two column stackable grid container" style="margin-top:-1rem">
+      <div class="five wide column" id="logo">
+        <img class="ui centered image" src="img/logo.png" alt="company logo">
+      </div>
+      <div class="eleven wide column" id="responsive-img">
+        <img class="ui centered image" src="https://placehold.it/850x90/007bff/ffffff/&amp;text=Responsive Img" alt="advertisement">
+      </div>
+    </div>
+    <!-- End Logo + Responsive Img -->
+
+    <!-- Navbar Menu -->
+    <div class="ui grid container">
+      <div class="center aligned column" style="overflow-x:auto">
+        <div class="ui compact menu secondary">
+          <a href="" class="item">Tutorials</a>
+          <a href="" class="item">Reviews</a>
+          <a href="" class="item">News</a>
+          <a href="" class="item">Books</a>
+          <a href="" class="item">Softwares</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Menu -->
+
+  </header>
+  <!-- End Header -->
+
+  <!-- Main Container -->
+  <main class="ui container">
+    <!-- Divider -->
+    <div class="ui two grid">
+      <!-- Main Content -->
+      <div class="sixteen wide tablet twelve wide computer column">
+        <!-- Breadcrumb -->
+        <nav class="ui segment">
+          <div class="ui breadcrumb">
+            <a class="section">Home</a>
+            <div class="divider"> / </div>
+            <a class="section">Article</a>
+            <div class="divider"> / </div>
+            <div class="section active">Lorem Ipsum Dolor</div>
+          </div>
+        </nav>
+        <!-- End Breadcrumb -->
+        
+        <!-- List Articles -->
+        <div class="ui segment">
+          <article>
+            <h1>About</h1>
+            <small>Published a month ago</small> <small>by <a href="">Author</a></small>
+            <hr/>
+            <h5>About Bootstrap</h5>
+            <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+            <hr/>
+            <h5>Contact Us</h5>
+            <p>Feel free to get in touch with us via the form below.</p>
+            <form class="ui form" onsubmit="startProgress()" novalidate>
+              <div class="field">
+                <div class="two fields">
+                  <div class="field">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="First Name">
+                  </div>
+                  <div class="field">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Last Name">
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label for="inputMail">Email</label>
+                <input type="email" id="inputMail" placeholder="example@domain.com" required>
+              </div>
+              <div class="field">
+                <label for="inputCateg">Contact Category</label>
+                <select class="ui dropdown" id="inputCateg" required>
+                  <option value="Question">Question</option>
+                  <option value="Request">Request</option>
+                  <option value="Help">Help</option>
+                </select>
+              </div>
+              <div class="field">
+                <label id="inputMsg">Message</label>
+                <textarea name="inputMsg" placeholder="Please enter a message in the textarea." required></textarea>
+              </div>
+              <div class="inline field">
+                <div class="ui toggle checkbox">
+                  <input type="checkbox" id="invalidSwitch">
+                  <label for="invalidSwitch">Switch to Agree</label>
+                </div>
+              </div>
+              <div class="field">
+                <button type="submit" id="submit-form" class="ui primary submit button">Submit Form</button>
+              </div>
+              <div class="field">
+                <div class="ui error message"></div>
+              </div>
+              <div class="ui indicating progress" data-percent="74" id="progress">
+                <div class="bar"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </form>
+          </article>
+        </div>
+        <!-- End List Articles -->
+      </div>
+      <!-- End Main Content -->
+
+      <!-- Sidebar -->
+      <aside class="sixteen wide tablet four wide computer column">
+        <!-- Popular -->
+        <section id="popular">
+          <h5 class="ui segment">Popular Posts</h5>
+          <div class="ui vertical fluid menu">
+            <div class="item">
+              <div class="content">
+                <div class="header"><a href="">Cras justo odio</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <div class="header"><a href="">Lorem ipsum</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <div class="header"><a href="">Dapibus ac facilisis in</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <div class="header"><a href="">Morbi leo risus</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <div class="header"><a href="">Dolor sit amet</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Popular -->
+        <div class="ui divider"></div>
+        <!-- Label -->
+        <section id="label">
+          <h5 class="ui segment">Label</h5>
+          <div class="ui vertical fluid menu">
+            <div class="item"><a href="">Movies</a> <span class="ui label">25</span></div>
+            <div class="item"><a href="">Games</a> <span class="ui label">25</span></div>
+            <div class="item"><a href="">Aplication</a> <span class="ui label">25</span></div>
+            <div class="item"><a href="">Life Hacks</a> <span class="ui label">25</span></div>
+            <div class="item"><a href="">Games</a> <span class="ui label">25</span></div>
+            <div class="item"><a href="">Aplication</a> <span class="ui label">25</span></div>
+          </div>
+        </section>
+        <!-- End Label -->
+      </aside>
+      <!-- End Sidebar -->
+    </div>
+    <!-- End Divided -->
+  </main>
+  <!-- End Main Container -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="ui container-fluid">
+      <div class="ui segment column centered grid">
+        <div id="about" class="sixteen wide eight wide computer column center aligned">
+          <h5>About Semantic UI</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis animi nemo sunt fugit facilis culpa doloremque, corrupti necessitatibus unde mollitia possimus praesentium iusto, repellat accusamus! Porro eligendi esse sequi!</p>
+        </div>
+      </div>
+    </div>
+    <div class="ui two column stackable menu secondary grid" style="margin-bottom:0rem">
+      <!-- Navbar -->
+      <nav class="column menu three grid">
+        <!-- Menu -->
+        <a href="static.html" class="column item">About</a>
+        <a href="static.html" class="column item">Privacy</a>
+        <a href="static.html" class="column item">Disclaimer</a>
+        <!-- End Menu -->
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Copyright -->
+      <div class="column menu right">
+        <div class="item right aligned">
+          <div class="">&copy; 2019</div>
+        </div>
+      </div>
+      <!-- End Copyright -->
+      
+    </div>
+    <!-- End TopBar -->
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Script -->
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="semantic.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.progress').hide();
+    $('select.dropdown').dropdown();
+    $('.ui.checkbox').checkbox();
+  });
+  
+  // Form Validation
+  $('.ui.form')
+  .form({
+    fields: {
+      firstName: {
+        identifier: 'firstName',
+        rules: [
+          {
+            type  : 'empty',
+            prompt: 'Please enter your first name'
+          }
+        ]
+      },
+      lastName: {
+        identifier: 'lastName',
+        rules: [
+          {
+            type  : 'empty',
+            prompt: 'Please enter your last name'
+          }
+        ]
+      },
+      inputMail: {
+        identifier: 'inputMail',
+        rules: [
+          {
+            type  : 'empty',
+            prompt: 'Please enter your email'
+          }
+        ]
+      },
+      inputCateg: {
+        identifier: 'inputCateg',
+        rules: [
+          {
+            type  : 'empty',
+            prompt: 'Please select message category'
+          }
+        ]
+      },
+      inputMsg: {
+        identifier: 'inputMsg',
+        rules: [
+          {
+            type  : 'empty',
+            prompt: 'Please enter your message'
+          }
+        ]
+      },
+      invalidSwitch: {
+        identifier: 'invalidSwitch',
+        rules: [
+          {
+            type  : 'checked',
+            prompt: 'Please agree'
+          }
+        ]
+      }
+    }
+  })
+;
+
+  // Progress Bar  
+  function startProgress() {
+  $(".progress").show();
+  $("#progress").progress({
+      percent: 100
+    },2500);
+  }
+  </script>
+  <!-- End Script -->
+</body>
+</html>
