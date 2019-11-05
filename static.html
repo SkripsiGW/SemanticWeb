@@ -95,8 +95,8 @@
             <h1>About</h1>
             <small>Published a month ago</small> <small>by <a href="">Author</a></small>
             <hr/>
-            <h5>About Bootstrap</h5>
-            <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+            <h5>About Semantic UI</h5>
+            <p>Semantic allows developers to build beautiful websites fast, with concise HTML, intuitive javascript, and simplified debugging, helping make front-end development a delightful experience. Semantic is responsively designed allowing your website to scale on multiple devices. Semantic is production ready and partnered with frameworks such as React, Angular, Meteor, and Ember, which means you can integrate it with any of these frameworks to organize your UI layer alongside your application logic.</p>
             <hr/>
             <h5>Contact Us</h5>
             <p>Feel free to get in touch with us via the form below.</p>
@@ -148,6 +148,23 @@
                 <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </form>
+            <div class="ui divider"></div>
+            <h5>Frequently Asked Question</h5>
+            <div class="ui styled accordion">
+              <div class="active title"><i class="dropdown icon"></i>What is a dog?</div>
+              <div class="active content">
+                <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+              </div>
+              <div class="title"><i class="dropdown icon"></i>What kinds of dogs are there?</div>
+              <div class="content">
+                <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+              </div>
+              <div class="title"><i class="dropdown icon"></i>How do you acquire a dog?</div>
+              <div class="content">
+                <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+                <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+              </div>
+            </div>
           </article>
         </div>
         <!-- End List Articles -->
@@ -215,7 +232,7 @@
       <div class="ui segment column centered grid">
         <div id="about" class="sixteen wide eight wide computer column center aligned">
           <h5>About Semantic UI</h5>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis animi nemo sunt fugit facilis culpa doloremque, corrupti necessitatibus unde mollitia possimus praesentium iusto, repellat accusamus! Porro eligendi esse sequi!</p>
+          <p>Semantic allows developers to build beautiful websites fast, with concise HTML, intuitive javascript, and simplified debugging, helping make front-end development a delightful experience. Semantic is responsively designed allowing your website to scale on multiple devices. Semantic is production ready and partnered with frameworks such as React, Angular, Meteor, and Ember, which means you can integrate it with any of these frameworks to organize your UI layer alongside your application logic.</p>
         </div>
       </div>
     </div>
@@ -251,6 +268,7 @@
     $('.progress').hide();
     $('select.dropdown').dropdown();
     $('.ui.checkbox').checkbox();
+    $('.ui.accordion').accordion();
   });
   
   // Form Validation
